@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataFlight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <flightDepartAndReturn>
+    <FlightDetails>
+      <Id>0</Id>
+      <DayTimeFrom>2023-06-09T05:45:00</DayTimeFrom>
+      <CityFrom>Vilnius</CityFrom>
+      <DayTimeTo>2023-06-09T08:15:00</DayTimeTo>
+      <CityTo>Barcelona</CityTo>
+    </FlightDetails>
+    <FlightDetails>
+      <Id>0</Id>
+      <DayTimeFrom>2023-06-30T08:55:00</DayTimeFrom>
+      <CityFrom>Barcelona</CityFrom>
+      <DayTimeTo>2023-06-30T13:25:00</DayTimeTo>
+      <CityTo>Vilnius</CityTo>
+    </FlightDetails>
+  </flightDepartAndReturn>
+  <CostGeneral>$
+401
+.
+12</CostGeneral>
+</DataFlight>

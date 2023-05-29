@@ -18,7 +18,7 @@ namespace Ryanair
             home.AgreeWithUsingCookies();
             home.InputDepartureStation("Vilnius");
             home.InputDestinationStation("Barcelona");
-            home.ChooseDayCurrentMonth("2023-06-16");
+            home.ChooseDayCurrentMonth("2023-06-09");
             home.ChooseDayCurrentMonth("2023-06-30");
             home.AddAdultPassenger(1);
             home.AddChildrenPassenger(1);

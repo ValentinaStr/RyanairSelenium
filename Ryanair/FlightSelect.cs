@@ -81,7 +81,7 @@ namespace Ryanair
 
         public string GetOnlyTimeFlight(string XpathTime)
         {
-           return FindElementWithWaiter(XpathTime).Text.ToString().Split("\n")[0];
+            return FindElementWithWaiter(XpathTime).Text.ToString().Split("\n")[0];
         }
 
         public string GetOnlyCityFlight(string XpathTime)

@@ -2,7 +2,7 @@
 {
     public  class LoggerServiceTXT : ILogTXT
     {
-        private const string PATH = @"D:\projects\dotnet\Ira\MyLog.txt";
+        private const string PATH = @"D:\projects\dotnet\SeleniumRyanair\MyLog.txt";
 
         public LoggerServiceTXT()
         {
