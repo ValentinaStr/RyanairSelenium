@@ -1,6 +1,8 @@
-﻿namespace LoggerTXT
+﻿using ILogger;
+
+namespace LoggerTXT
 {
-    public  class LoggerServiceTXT : ILogTXT
+    public  class LoggerServiceTXT : ILog
     {
         private const string PATH = @"D:\projects\dotnet\SeleniumRyanair\MyLog.txt";
 
@@ -9,9 +11,9 @@
             File.WriteAllText(PATH, string.Empty);
         }
 
-        public void WriteLog(string message)
+        public void Log(string message)
         {
-            using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);
+            using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);            
             sw.WriteLineAsync(message);
         }
     }

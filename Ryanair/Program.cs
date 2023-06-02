@@ -1,24 +1,14 @@
-﻿using System.Reflection;
-using Ryanair.Flight;
-
-namespace Ryanair
+﻿namespace Ryanair
 {
     internal class Program
     {
         static void Main(string[] args)
-        {
-			Assembly assem = typeof(LoggerTXT.LoggerServiceTXT).Assembly;  
-			 var myLoggerTxt = (LoggerTXT.LoggerServiceTXT)assem.CreateInstance("LoggerTXT.LoggerServiceTXT");
-
-			Assembly assem1 = typeof(LoggerXML.LoggerServiceXML<DataFlight>).Assembly;	
-			Type closed = typeof(LoggerXML.LoggerServiceXML<DataFlight>);
-			var myLoggerXml = (LoggerXML.LoggerServiceXML<DataFlight>)assem1.CreateInstance("LoggerXML.LoggerServiceXML`1[[Ryanair.Flight.DataFlight, Ryanair]]");
-
-			HomePage home = new HomePage();
+        {            
+            HomePage home = new HomePage();
             home.AgreeWithUsingCookies();
             home.InputDepartureStation("Vilnius");
             home.InputDestinationStation("Barcelona");
-            home.ChooseDayCurrentMonth("2023-06-09");
+            home.ChooseDayCurrentMonth("2023-06-23");
             home.ChooseDayCurrentMonth("2023-06-30");
             home.AddAdultPassenger(1);
             home.AddChildrenPassenger(1);
@@ -28,16 +18,11 @@ namespace Ryanair
             flightSelect.ChoiceSelectFrom();
             flightSelect.ChoiceSelectTo();
             flightSelect.ChoiceTypeFamilyPlus();
-            flightSelect.ChoiceButtonBasket();
+            flightSelect.OpenBasket();
 
-           myLoggerXml.WriteLog(flightSelect.GetDataFlight());
-		   myLoggerTxt.WriteLog(flightSelect.GetDataFlight().GetDataFlightTXT());
-			//flightSelect.GetInformationAboutFlightInTheBasket();
-			//flightSelect.GetInformationAboutFlightXml();
-			//flightSelect.GetInformationAboutFlightTXT();
-           flightSelect.LogInformationAboutFlightDataBase();
+			Logger.CreateLog(@"D:\projects\dotnet\SeleniumRyanair\LoggerXML\bin\Debug\net6.0\LoggerXML.dll", flightSelect.GetDataFlight().GetDataFlightTXT());
 
-           home.DriverClose();
+			home.DriverClose();
         }
     }
 }

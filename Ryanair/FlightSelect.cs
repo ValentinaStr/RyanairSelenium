@@ -1,6 +1,6 @@
 ﻿using static Ryanair.XpathRyanair;
 using Ryanair.Flight;
-using Ryanair.LoggerServices;
+
 
 namespace Ryanair
 {
@@ -46,7 +46,7 @@ namespace Ryanair
             FindElementWithWaiter(CHOICE_TYPE_FAMILY_PLUS).Click();
         }
 
-        public void ChoiceButtonBasket() 
+        public void OpenBasket() 
         {
             FindElementWithWaiter(BUTTON_BASKET).Click();
         }
@@ -66,10 +66,10 @@ namespace Ryanair
             Log(GetDataFlight().GetDataFlightTXT());
         }*/
 
-        public void LogInformationAboutFlightDataBase()
+       /* public void LogInformationAboutFlightDataBase()
         {
             new LoggerServiceDb<DataFlight>().Create(GetDataFlight());
-        }
+        }*/
 
         public DateTime GetDataTimeFlight(string XpathDate, string XpathTime)
         {
@@ -99,7 +99,7 @@ namespace Ryanair
             return detailsFlight;
         }
         public DataFlight GetDataFlight()
-        {
+         {
             var departFlight = GetFlightDetails(GET_ONLY_DAY_DEPART, GET_TIME_AND_CITY_DEPART_FROM, GET_TIME_AND_CITY_ARRIVE_TO);
             var returnFlight = GetFlightDetails(GET_ONLY_DAY_RETURN, GET_TIME_AND_CITY_RETURN_FROM, GET_TIME_AND_CITY_RETURN_TO);
             string costGeneral = FindElementWithWaiter(GET_COST_GENERAL).Text.ToString();

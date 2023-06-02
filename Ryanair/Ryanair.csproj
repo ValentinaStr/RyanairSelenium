@@ -18,9 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LoggerDb\LoggerDb.csproj" />
-    <ProjectReference Include="..\LoggerTXT\LoggerTXT.csproj" />
-    <ProjectReference Include="..\LoggerXMl\LoggerXML.csproj" />
+    <ProjectReference Include="..\ILogger\ILogger.csproj" />
   </ItemGroup>
 
 </Project>

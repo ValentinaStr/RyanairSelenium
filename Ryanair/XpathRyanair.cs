@@ -19,14 +19,12 @@
                               CONTINUE_VALUE = "//button[@class='fare-upgrade-footer-continue_button ry-button--outline-light-blue ry-button--full']",
                               INFORMATION_ABOUT_FLIGHT = "//flights-lazy-content[@class='ng-star-inserted']",
                               BUTTON_BASKET = "//header-basket[@class='basket app-basket']",
-                              INFORMATION_ABOUT_FLIGHT_IN_THE_BASKET = "//div[@class='tooltip-inner']",
-
-                             // GET_DAY_DEPART_FROM = "//div[contains(@class,'flight-card__date')]",
-                              GET_ONLY_DAY_DEPART = "//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
+                                                    
+                              GET_ONLY_DAY_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
                               GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
-                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']",
+                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']", //outbound
 
-                              GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
+							  GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
 							  GET_TIME_AND_CITY_RETURN_FROM = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.departure']", 
                               GET_TIME_AND_CITY_RETURN_TO = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.arrival']", 
 
