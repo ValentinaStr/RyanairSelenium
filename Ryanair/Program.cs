@@ -8,8 +8,8 @@
             home.AgreeWithUsingCookies();
             home.InputDepartureStation("Vilnius");
             home.InputDestinationStation("Barcelona");
-            home.ChooseDayCurrentMonth("2023-07-14");
-            home.ChooseDayCurrentMonth("2023-07-21");
+            home.ChooseDayCurrentMonth("2023-07-07");
+            home.ChooseDayCurrentMonth("2023-07-1");
             home.AddAdultPassenger(1);
             home.AddChildrenPassenger(1);
             home.ConfirmSelection();
@@ -20,7 +20,7 @@
             flightSelect.ChoiceTypeFamilyPlus();
             flightSelect.OpenBasket();
 
-			Logger.CreateLog(flightSelect.GetDataFlight().GetDataFlightTXT());
+			Logger.CreateLog(@"D:\projects\dotnet\SeleniumRyanair\LoggerDb\bin\Debug\net6.0\LoggerDb.dll", flightSelect.GetDataFlight().GetDataFlightTXT());
 
 			home.DriverClose();
         }

@@ -7,18 +7,19 @@ namespace Ryanair
 	{
 		public static void CreateLog(string name, string message)
 		{
-			var sr = new StreamReader(@"D:\projects\dotnet\SeleniumRyanair\Ryanair\LoggerDll");
-
 			var assem = Assembly.LoadFrom(name);
 			Type[] types = assem.GetTypes();
-			foreach (Type type in types)
+			foreach (Type t in types)
 			{
-				if (type.GetInterface("ILog") != null)
-				{
-					var myLogger = (ILog)assem.CreateInstance(type.ToString());
+				if (t.GetInterface("ILog") != null)
+				{		
+					var myLogger = (ILog)assem.CreateInstance(t.ToString());
 					myLogger.Log(message);
+
 				}
 			}
+			
 		}
+
 	}
 }
