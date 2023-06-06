@@ -12,16 +12,13 @@ namespace Ryanair
         internal IWebDriver _driver;
         internal WebDriverWait _wait;
         internal Actions _action;
-        //internal LoggerServiceTXT _loggerServiceTXT;
-        //internal LoggerServiceXML<DataFlight> _loggerServiceXML;
-
+        
         private DriverActions()
         {
             _driver = new ChromeDriver();
             _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(WAITTIME));
             _action = new Actions(_driver);
-            //_loggerServiceTXT = new LoggerServiceTXT();
-           // _loggerServiceXML = new LoggerServiceXML<DataFlight>();
+            
         }
 
         public static DriverActions GetDriverActions() 

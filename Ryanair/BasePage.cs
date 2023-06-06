@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 using System.Collections.ObjectModel;
-using Ryanair.Flight;
 
 namespace Ryanair
 {
@@ -26,6 +25,7 @@ namespace Ryanair
             _driverActions._action.Perform();
             _driverActions._driver.FindElement(By.XPath(xPath)).Click();
         }
+
         protected void ScrollToElement(string xPath)
         {
             _driverActions._wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xPath)));
@@ -42,16 +42,6 @@ namespace Ryanair
         {
             return _driverActions._wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath(xpath)));
         }
-
-        /*public void Log(DataFlight dataFlight)
-        {
-            _driverActions._loggerServiceXML.WriteLogAsyncXML(dataFlight );
-        }
-
-        public void Log(string data)
-        {
-            _driverActions._loggerServiceTXT.WriteLogAsyncTXT(data);
-        }*/
 
         public void DriverClose()
         {

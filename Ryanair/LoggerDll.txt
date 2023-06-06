@@ -1,0 +1,3 @@
+﻿D:\projects\dotnet\SeleniumRyanair\LoggerTXT\bin\Debug\net6.0\LoggerTXT.dll
+D:\projects\dotnet\SeleniumRyanair\LoggerXMl\bin\Debug\net6.0\LoggerXML.dll
+D:\projects\dotnet\SeleniumRyanair\LoggerDb\bin\Debug\net6.0\LoggerDb.dll

@@ -1,9 +1,9 @@
-﻿using Ryanair.Flight;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using DataSelectFlight;
 
-namespace Ryanair
+namespace LoggerDb
 {
-    public class ApplicationDbContext : DbContext
+    internal class ApplicationDbContext : DbContext
     {
         public DbSet<DataFlight> dataFlights { get; set; } = null;
 

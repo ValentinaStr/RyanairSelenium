@@ -1,17 +1,17 @@
-<Flight price="$&#xD;&#xA;600&#xD;&#xA;.&#xD;&#xA;34&#xA;">
+<Flight Price="$&#xD;&#xA;155&#xD;&#xA;.&#xD;&#xA;62&#xA;">
   <FlightDepard>
-    <Day>6/23/2023</Day>
+    <Day>7/14/2023</Day>
     <Time>5:45:00</Time>
     <City>Vilnius</City>
-    <Day>6/23/2023</Day>
+    <Day>7/14/2023</Day>
     <Time>8:15:00</Time>
     <City>Barcelona</City>
   </FlightDepard>
   <FlightReturn>
-    <Day>6/30/2023</Day>
+    <Day>7/21/2023</Day>
     <Time>8:55:00</Time>
     <City>Barcelona</City>
-    <Day>6/30/2023</Day>
+    <Day>7/21/2023</Day>
     <Time>1:25:00</Time>
     <City>Vilnius</City>
   </FlightReturn>

@@ -21,7 +21,11 @@
                               BUTTON_BASKET = "//header-basket[@class='basket app-basket']",
                                                     
                               GET_ONLY_DAY_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
-                              GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
+                              GET_TIME_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
+                              
+
+
+							  GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
                               GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']", //outbound
 
 							  GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",

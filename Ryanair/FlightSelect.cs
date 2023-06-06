@@ -1,6 +1,6 @@
 ﻿using static Ryanair.XpathRyanair;
-using Ryanair.Flight;
-
+using DataSelectFlight;
+using System.Text;
 
 namespace Ryanair
 {
@@ -51,26 +51,6 @@ namespace Ryanair
             FindElementWithWaiter(BUTTON_BASKET).Click();
         }
 
-        /*public void GetInformationAboutFlightInTheBasket() 
-        {
-            Log(FindElementWithWaiter(INFORMATION_ABOUT_FLIGHT_IN_THE_BASKET).Text);
-        }
-
-       public void GetInformationAboutFlightXml()
-        {
-            Log(GetDataFlight());
-        }
-
-       public void GetInformationAboutFlightTXT()
-        {
-            Log(GetDataFlight().GetDataFlightTXT());
-        }*/
-
-       /* public void LogInformationAboutFlightDataBase()
-        {
-            new LoggerServiceDb<DataFlight>().Create(GetDataFlight());
-        }*/
-
         public DateTime GetDataTimeFlight(string XpathDate, string XpathTime)
         {
             string day = FindElementWithWaiter(XpathDate).GetAttribute("data-ref");
@@ -105,5 +85,18 @@ namespace Ryanair
             string costGeneral = FindElementWithWaiter(GET_COST_GENERAL).Text.ToString();
             return new DataFlight(departFlight, returnFlight,costGeneral);
         }
-    }
+
+		/*public string GetDataFlightString()
+		{
+			var sb = new StringBuilder();
+			sb.Append(FindElementWithWaiter(GET_ONLY_DAY_DEPART).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_DEPART_FROM).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_ARRIVE_TO).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_ONLY_DAY_RETURN).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_RETURN_FROM).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_RETURN_TO).ToString() + " ");
+			sb.Append(FindElementWithWaiter(GET_COST_GENERAL).Text).ToString();
+			return sb.ToString();
+		}*/
+	}
 }

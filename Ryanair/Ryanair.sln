@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerXML", "..\LoggerXMl\L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerTXT", "..\LoggerTXT\LoggerTXT.csproj", "{2885A64A-8A64-4E4D-8A6E-C2F7E4936FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogger", "..\ILogger\ILogger.csproj", "{3D6F8D12-AD14-4093-802B-30DC5B6642F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILogger", "..\ILogger\ILogger.csproj", "{3D6F8D12-AD14-4093-802B-30DC5B6642F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerDb", "..\LoggerDb\LoggerDb.csproj", "{8E158BB8-F1CC-4CF0-9DDB-F0FE8548FFD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerDb", "..\LoggerDb\LoggerDb.csproj", "{8E158BB8-F1CC-4CF0-9DDB-F0FE8548FFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSelectFlight", "..\DataFlight\DataSelectFlight.csproj", "{0108D0FB-8DBF-4CCE-BE36-6499F5C73B76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8E158BB8-F1CC-4CF0-9DDB-F0FE8548FFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E158BB8-F1CC-4CF0-9DDB-F0FE8548FFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E158BB8-F1CC-4CF0-9DDB-F0FE8548FFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0108D0FB-8DBF-4CCE-BE36-6499F5C73B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0108D0FB-8DBF-4CCE-BE36-6499F5C73B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0108D0FB-8DBF-4CCE-BE36-6499F5C73B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0108D0FB-8DBF-4CCE-BE36-6499F5C73B76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

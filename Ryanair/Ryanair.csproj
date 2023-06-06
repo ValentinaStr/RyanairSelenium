@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataFlight\DataSelectFlight.csproj" />
     <ProjectReference Include="..\ILogger\ILogger.csproj" />
   </ItemGroup>
 

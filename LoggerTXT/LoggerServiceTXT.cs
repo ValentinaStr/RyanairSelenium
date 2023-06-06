@@ -13,7 +13,7 @@ namespace LoggerTXT
 
         public void Log(string message)
         {
-            using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);            
+            using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);
             sw.WriteLineAsync(message);
         }
     }
