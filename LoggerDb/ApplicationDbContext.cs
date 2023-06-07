@@ -1,16 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using DataSelectFlight;
 
 namespace LoggerDb
 {
     internal class ApplicationDbContext : DbContext
     {
-        public DbSet<DataFlight> dataFlights { get; set; } = null;
-
-        public DbSet<FlightDetails> flightsDetails { get; set; } = null;
-
+        public DbSet<LogDbModel> dataDbModel { get; set; } = null;
+        
         private static ApplicationDbContext? _instance;
-       
+
         private ApplicationDbContext()
         {
             Database.EnsureDeleted();

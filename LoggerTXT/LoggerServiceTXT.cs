@@ -11,10 +11,10 @@ namespace LoggerTXT
             File.WriteAllText(PATH, string.Empty);
         }
 
-        public void Log(string message)
+        public void Log(ILogData message)
         {
-            using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);
-            sw.WriteLineAsync(message);
+           using StreamWriter sw = new(PATH, true, System.Text.Encoding.Default);
+            sw.WriteLineAsync(message.ToString());
         }
     }
 }

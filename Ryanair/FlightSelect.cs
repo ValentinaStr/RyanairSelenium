@@ -83,8 +83,8 @@ namespace Ryanair
             var departFlight = GetFlightDetails(GET_ONLY_DAY_DEPART, GET_TIME_AND_CITY_DEPART_FROM, GET_TIME_AND_CITY_ARRIVE_TO);
             var returnFlight = GetFlightDetails(GET_ONLY_DAY_RETURN, GET_TIME_AND_CITY_RETURN_FROM, GET_TIME_AND_CITY_RETURN_TO);
             string costGeneral = FindElementWithWaiter(GET_COST_GENERAL).Text.ToString();
-            return new DataFlight(departFlight, returnFlight,costGeneral);
-        }
+			return new DataFlight(departFlight, returnFlight, costGeneral);
+         }
 
 		/*public string GetDataFlightString()
 		{

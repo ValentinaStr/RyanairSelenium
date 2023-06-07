@@ -1,4 +1,6 @@
-﻿namespace Ryanair
+﻿using DataSelectFlight;
+
+namespace Ryanair
 {
     internal class Program
     {
@@ -8,8 +10,8 @@
             home.AgreeWithUsingCookies();
             home.InputDepartureStation("Vilnius");
             home.InputDestinationStation("Barcelona");
-            home.ChooseDayCurrentMonth("2023-07-07");
-            home.ChooseDayCurrentMonth("2023-07-1");
+            home.ChooseDayCurrentMonth("2023-07-21");
+            home.ChooseDayCurrentMonth("2023-07-28");
             home.AddAdultPassenger(1);
             home.AddChildrenPassenger(1);
             home.ConfirmSelection();
@@ -19,8 +21,8 @@
             flightSelect.ChoiceSelectTo();
             flightSelect.ChoiceTypeFamilyPlus();
             flightSelect.OpenBasket();
-
-			Logger.CreateLog(@"D:\projects\dotnet\SeleniumRyanair\LoggerDb\bin\Debug\net6.0\LoggerDb.dll", flightSelect.GetDataFlight().GetDataFlightTXT());
+			
+			Logger.CreateLog(flightSelect.GetDataFlight());
 
 			home.DriverClose();
         }
