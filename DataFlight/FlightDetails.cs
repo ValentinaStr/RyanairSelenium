@@ -20,6 +20,7 @@ namespace DataSelectFlight
         public FlightDetails()
         {
         }
+
         public void Deconstruct (out DateTime dayTimeFrom, out string cityFrom, out DateTime dayTimeTo, out  string cityTo)
         {
             dayTimeFrom = (DateTime)DayTimeFrom;
@@ -27,8 +28,6 @@ namespace DataSelectFlight
             cityFrom = CityFrom;
             cityTo = CityTo;
         }
-
-
 
         public string GetFlightDetailsTXT()
         {

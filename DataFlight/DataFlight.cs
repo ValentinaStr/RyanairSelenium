@@ -3,7 +3,6 @@ using ILogger;
 
 namespace DataSelectFlight 
 { 
-
 	public class DataFlight : ILogData
     {        
         public FlightDetails FlightDepart { get; set; } 

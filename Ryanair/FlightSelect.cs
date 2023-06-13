@@ -86,7 +86,7 @@ namespace Ryanair
 			return new DataFlight(departFlight, returnFlight, costGeneral);
          }
 
-		/*public string GetDataFlightString()
+		public string GetDataFlightString()
 		{
 			var sb = new StringBuilder();
 			sb.Append(FindElementWithWaiter(GET_ONLY_DAY_DEPART).ToString() + " ");
@@ -97,6 +97,6 @@ namespace Ryanair
 			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_RETURN_TO).ToString() + " ");
 			sb.Append(FindElementWithWaiter(GET_COST_GENERAL).Text).ToString();
 			return sb.ToString();
-		}*/
+		}
 	}
 }

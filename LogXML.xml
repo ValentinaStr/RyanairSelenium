@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DataFlight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <FlightDepart>
-    <DayTimeFrom>2023-07-21T05:45:00</DayTimeFrom>
+    <DayTimeFrom>2023-07-07T05:45:00</DayTimeFrom>
     <CityFrom>Vilnius</CityFrom>
-    <DayTimeTo>2023-07-21T08:15:00</DayTimeTo>
+    <DayTimeTo>2023-07-07T08:15:00</DayTimeTo>
     <CityTo>Barcelona</CityTo>
   </FlightDepart>
   <FlightReturn>
-    <DayTimeFrom>2023-07-28T08:55:00</DayTimeFrom>
+    <DayTimeFrom>2023-07-14T08:55:00</DayTimeFrom>
     <CityFrom>Barcelona</CityFrom>
-    <DayTimeTo>2023-07-28T13:25:00</DayTimeTo>
+    <DayTimeTo>2023-07-14T13:25:00</DayTimeTo>
     <CityTo>Vilnius</CityTo>
   </FlightReturn>
   <CostGeneral>$
-132
+1,401
 .
-68</CostGeneral>
+42</CostGeneral>
 </DataFlight>

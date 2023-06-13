@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LoggerDb
 {
-	public class LogDbModel : ILogData
+	internal class LogDbModel : ILogData
 	{
 		public int id { get; set; }
 		[Column(name:"Day & time depart")]

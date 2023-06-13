@@ -22,17 +22,12 @@
                                                     
                               GET_ONLY_DAY_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
                               GET_TIME_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
-                              
-
-
 							  GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
-                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']", //outbound
-
+                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']", 
 							  GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
 							  GET_TIME_AND_CITY_RETURN_FROM = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.departure']", 
-                              GET_TIME_AND_CITY_RETURN_TO = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.arrival']", 
-
-							  GET_COST_GENERAL = "//ry-price[@class='price']";
+                              GET_TIME_AND_CITY_RETURN_TO = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.arrival']",
+							  GET_COST_GENERAL = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']";
     }
 }
 

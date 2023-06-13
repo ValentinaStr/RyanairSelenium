@@ -1,12 +1,12 @@
-Day and time depart : 7/21/2023 5:45:00 AM 
+Day and time depart : 7/7/2023 5:45:00 AM 
 City depart : Vilnius 
-Day and time to : 7/21/2023 8:15:00 AM 
+Day and time to : 7/7/2023 8:15:00 AM 
 City to : Barcelona 
- Day and time depart : 7/28/2023 8:55:00 AM 
+ Day and time depart : 7/14/2023 8:55:00 AM 
 City depart : Barcelona 
-Day and time to : 7/28/2023 1:25:00 PM 
+Day and time to : 7/14/2023 1:25:00 PM 
 City to : Vilnius 
  $
-132
+1,401
 .
-68
+42
