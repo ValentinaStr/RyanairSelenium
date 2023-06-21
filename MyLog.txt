@@ -6,7 +6,4 @@ City to : Barcelona
 City depart : Barcelona 
 Day and time to : 7/14/2023 1:25:00 PM 
 City to : Vilnius 
- $
-1,401
-.
-42
+ $1489.89

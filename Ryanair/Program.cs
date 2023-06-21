@@ -1,6 +1,4 @@
-﻿using DataSelectFlight;
-
-namespace Ryanair
+﻿namespace Ryanair
 {
     internal class Program
     {
@@ -23,7 +21,6 @@ namespace Ryanair
             flightSelect.ChoiceTypeRegular();
             flightSelect.OpenBasket();
             listAllLoggers.CreateLog(flightSelect.GetDataFlight());
-			//Logger.CreateLog(flightSelect.GetDataFlight());
 			
 			home.DriverClose();
         }

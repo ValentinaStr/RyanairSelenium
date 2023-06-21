@@ -12,8 +12,5 @@
     <DayTimeTo>2023-07-14T13:25:00</DayTimeTo>
     <CityTo>Vilnius</CityTo>
   </FlightReturn>
-  <CostGeneral>$
-1,401
-.
-42</CostGeneral>
+  <CostGeneral>$1489.89</CostGeneral>
 </DataFlight>

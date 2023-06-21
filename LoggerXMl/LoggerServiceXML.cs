@@ -13,10 +13,8 @@ namespace LoggerXML
 		public void Log(ILogData dataToLog)
 		{
 			XmlSerializer xmlSerializer = new (dataToLog.GetType());
-			using (TextWriter writer = new StreamWriter(PATH))
-			{
-				xmlSerializer.Serialize(writer, dataToLog);
-			}
+			using (TextWriter writer = new StreamWriter(PATH))			
+			xmlSerializer.Serialize(writer, dataToLog);			
 		}
 	}
 }

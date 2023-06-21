@@ -19,16 +19,20 @@
                               CONTINUE_VALUE = "//button[@class='fare-upgrade-footer-continue_button ry-button--outline-light-blue ry-button--full']",
                               INFORMATION_ABOUT_FLIGHT = "//flights-lazy-content[@class='ng-star-inserted']",
                               BUTTON_BASKET = "//header-basket[@class='basket app-basket']",
-                                                    
+
                               GET_ONLY_DAY_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
                               GET_TIME_DEPART = "//div[@data-ref='outbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
-							  GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
-                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']", 
-							  GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
-							  GET_TIME_AND_CITY_RETURN_FROM = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.departure']", 
+                              GET_TIME_AND_CITY_DEPART_FROM = "//div[@class='flight-info__time']",
+                              GET_TIME_AND_CITY_ARRIVE_TO = "//div[@data-ref='flight-segment.arrival']",
+                              GET_ONLY_DAY_RETURN = "//div[@data-ref='inbound']//div[@class='body-m-lg body-m-sm flight-segment-details ng-star-inserted']",
+                              GET_TIME_AND_CITY_RETURN_FROM = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.departure']",
                               GET_TIME_AND_CITY_RETURN_TO = "//flight-card-new[@data-e2e='flight-card--inbound']//div[@data-ref='flight-segment.arrival']",
-							  GET_COST_GENERAL = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']";
-    }
+			                  GET_COST_GENERAL = "//div[@autoclose='outside']",
+		                      GET_COST_GENERAL_INT = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']//span[@class='price__integers']",
+		                      GET_COST_GENERAL_DECIMALS = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']//span[@class='price__decimals ng-star-inserted']";
+
+
+	}
 }
 
 
