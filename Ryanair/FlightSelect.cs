@@ -82,11 +82,12 @@ namespace Ryanair
          {
             var departFlight = GetFlightDetails(GET_ONLY_DAY_DEPART, GET_TIME_AND_CITY_DEPART_FROM, GET_TIME_AND_CITY_ARRIVE_TO);
             var returnFlight = GetFlightDetails(GET_ONLY_DAY_RETURN, GET_TIME_AND_CITY_RETURN_FROM, GET_TIME_AND_CITY_RETURN_TO);
-            string costGeneral = FindElementWithWaiter(GET_COST_GENERAL).Text.ToString();
-            return new DataFlight(departFlight, returnFlight,costGeneral);
-        }
+            Thread.Sleep(10000);
+			var costGeneral =  FindElementWithWaiter(GET_COST_GENERAL).Text.ToString().Replace(",","").Replace("\n","").Replace("\r","");
+            return new DataFlight(departFlight, returnFlight, costGeneral);
+         }
 
-		/*public string GetDataFlightString()
+		public string GetDataFlightString()
 		{
 			var sb = new StringBuilder();
 			sb.Append(FindElementWithWaiter(GET_ONLY_DAY_DEPART).ToString() + " ");
@@ -95,8 +96,8 @@ namespace Ryanair
 			sb.Append(FindElementWithWaiter(GET_ONLY_DAY_RETURN).ToString() + " ");
 			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_RETURN_FROM).ToString() + " ");
 			sb.Append(FindElementWithWaiter(GET_TIME_AND_CITY_RETURN_TO).ToString() + " ");
-			sb.Append(FindElementWithWaiter(GET_COST_GENERAL).Text).ToString();
+			sb.Append(FindElementWithWaiter(GET_COST_GENERAL).Text.ToString());
 			return sb.ToString();
-		}*/
+		}
 	}
 }

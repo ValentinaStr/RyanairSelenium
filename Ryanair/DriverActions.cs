@@ -17,8 +17,7 @@ namespace Ryanair
         {
             _driver = new ChromeDriver();
             _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(WAITTIME));
-            _action = new Actions(_driver);
-            
+            _action = new Actions(_driver); 
         }
 
         public static DriverActions GetDriverActions() 

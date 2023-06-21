@@ -3,23 +3,31 @@ using ILogger;
 
 namespace Ryanair
 {
-	internal  static class Logger
+	internal class LoggerManager
 	{
-		public static void CreateLog(string name, string message)
+		private List<ILog> loggers = new();
+		public LoggerManager(string fileName)
 		{
-			var assem = Assembly.LoadFrom(name);
-			Type[] types = assem.GetTypes();
-			foreach (Type t in types)
+			using var reader = new StreamReader(fileName);
+			string? line;
+			while ((line = reader.ReadLine()) != null)
 			{
-				if (t.GetInterface("ILog") != null)
-				{		
-					var myLogger = (ILog)assem.CreateInstance(t.ToString());
-					myLogger.Log(message);
+				var assem = Assembly.LoadFrom(line);
+				Type types = assem.GetExportedTypes()[0];
 
+				if (types.GetInterface("ILog") != null)
+				{
+					loggers.Add((ILog)assem.CreateInstance(types.ToString()));
 				}
 			}
-			
 		}
 
+		public void CreateLog(ILogData dataToLog)
+		{
+			foreach (ILog myLogger in loggers)
+			{
+				myLogger.Log(dataToLog);
+			}
+		}
 	}
 }

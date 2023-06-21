@@ -1,32 +1,46 @@
 ﻿using System.Text;
 using ILogger;
 
+namespace DataSelectFlight 
+{ 
+	public class DataFlight : ILogData
+    {        
+        public FlightDetails FlightDepart { get; set; } 
+		public FlightDetails FlightReturn { get; set; }
+		public string CostGeneral { get; set; }
 
-namespace DataSelectFlight;
+        public DataFlight(FlightDetails flightDepart, FlightDetails flightReturn, string costGeneral)
+        {
+            FlightDepart = flightDepart;
+            FlightReturn = flightReturn;
+            CostGeneral = costGeneral;
+        }
 
-public class DataFlight : IDataToLog
+        public DataFlight()
+        {
+        }
 
-{
-	public int Id { get; set; }
-    public List<FlightDetails> flightDepartAndReturn { get; set; } = new();
-    public string CostGeneral { get; set; }
+		public void Deconstruct(out DateTime departDayTimeFrom, out string departCityFrom, out DateTime departDayTimeTo, out string departCityTo,
+			out DateTime returnDayTimeFrom, out string returnCityFrom, out DateTime returnDayTimeTo, out string returnCityTo, out string costGeneral)
+		{
+			departDayTimeFrom = FlightDepart.DayTimeFrom;
+            departCityFrom = FlightDepart.CityFrom;
+            departDayTimeTo = FlightDepart.DayTimeTo;
+			departCityTo = FlightDepart.CityTo;
+			returnDayTimeFrom = FlightReturn.DayTimeFrom;
+			returnCityFrom = FlightReturn.CityFrom;
+			returnDayTimeTo = FlightReturn.DayTimeTo;
+			returnCityTo = FlightReturn.CityTo;
+			costGeneral = CostGeneral;
+		}
 
-    public DataFlight(FlightDetails flightDepart, FlightDetails flightReturn, string costGeneral)
-    {
-        flightDepartAndReturn = new() { flightDepart, flightReturn };
-        CostGeneral = costGeneral;
-    }
-
-    public DataFlight()
-    {
-    }
-
-    public string GetDataFlightTXT()
-    {
-        var sb = new StringBuilder();
-        sb.Append(flightDepartAndReturn[0].GetFlightDetailsTXT());
-        sb.Append(flightDepartAndReturn[1].GetFlightDetailsTXT());
-        sb.Append(CostGeneral + "\n");
-        return sb.ToString();
+		public  override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append(FlightDepart.GetFlightDetailsTXT());
+            sb.Append(FlightReturn.GetFlightDetailsTXT());
+            sb.Append(CostGeneral);
+            return sb.ToString();
+        }
     }
 }

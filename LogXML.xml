@@ -1,18 +1,16 @@
-<Flight Price="$&#xD;&#xA;155&#xD;&#xA;.&#xD;&#xA;62&#xA;">
-  <FlightDepard>
-    <Day>7/14/2023</Day>
-    <Time>5:45:00</Time>
-    <City>Vilnius</City>
-    <Day>7/14/2023</Day>
-    <Time>8:15:00</Time>
-    <City>Barcelona</City>
-  </FlightDepard>
+<?xml version="1.0" encoding="utf-8"?>
+<DataFlight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FlightDepart>
+    <DayTimeFrom>2023-07-07T05:45:00</DayTimeFrom>
+    <CityFrom>Vilnius</CityFrom>
+    <DayTimeTo>2023-07-07T08:15:00</DayTimeTo>
+    <CityTo>Barcelona</CityTo>
+  </FlightDepart>
   <FlightReturn>
-    <Day>7/21/2023</Day>
-    <Time>8:55:00</Time>
-    <City>Barcelona</City>
-    <Day>7/21/2023</Day>
-    <Time>1:25:00</Time>
-    <City>Vilnius</City>
+    <DayTimeFrom>2023-07-14T08:55:00</DayTimeFrom>
+    <CityFrom>Barcelona</CityFrom>
+    <DayTimeTo>2023-07-14T13:25:00</DayTimeTo>
+    <CityTo>Vilnius</CityTo>
   </FlightReturn>
-</Flight>
+  <CostGeneral>$1489.89</CostGeneral>
+</DataFlight>
