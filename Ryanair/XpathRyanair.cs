@@ -30,9 +30,7 @@
 			                  GET_COST_GENERAL = "//div[@autoclose='outside']",
 		                      GET_COST_GENERAL_INT = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']//span[@class='price__integers']",
 		                      GET_COST_GENERAL_DECIMALS = "//ry-price-breakdown-footer[@class='footer ng-star-inserted']//ry-price[@class='price']//span[@class='price__decimals ng-star-inserted']";
-
-
-	}
+    }
 }
 
 
